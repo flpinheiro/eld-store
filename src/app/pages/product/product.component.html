@@ -1,0 +1,5 @@
+<div>
+    <button (click)="openDialog()">Add new Product</button>
+</div>
+
+<app-product-list [productList]="productList" (productEvent)="openDialog($event)"/>
